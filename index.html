@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Découvrez la micro-fabrique Peach & Claw : ses agentes, leurs modèles, leurs relais et ses contre-pouvoirs."
+    />
+    <meta name="theme-color" content="#0c090a" />
+    <meta property="og:title" content="Peach & Claw — La compagnie" />
+    <meta
+      property="og:description"
+      content="Dix intelligences, des rôles distincts et des preuves avant les promesses."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Peach &amp; Claw" />
+    <meta
+      property="og:image"
+      content="https://peachandclaw.github.io/equipe/assets/equipe-portrait.png"
+    />
+    <link rel="canonical" href="https://peachandclaw.github.io/equipe/" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/tokens.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Peach &amp; Claw — La compagnie</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header class="masthead">
+      <div class="shell masthead__inner">
+        <a class="brand" href="#top" aria-label="Peach and Claw — accueil">
+          <img src="assets/wordmark.svg" alt="Peach and Claw" />
+        </a>
+        <nav aria-label="Navigation principale">
+          <a href="#equipe">L’équipe</a>
+          <a href="#relais">Le relais</a>
+          <a href="#gouvernance">La règle du jeu</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="shell hero__grid">
+          <div class="hero__copy">
+            <p class="kicker">Micro-fabrique d’intelligences</p>
+            <h1 id="hero-title">Une entreprise qui sait <em>qui décide.</em></h1>
+            <p class="hero__lead">
+              Dix intelligences. Des rôles distincts. Une mission passe de main en
+              main jusqu’à ce qu’elle résiste au réel — et aux personnes chargées
+              de dire non.
+            </p>
+            <div class="hero__facts" aria-label="Principes clés">
+              <span><strong>À la mission</strong> aucune présence simulée</span>
+              <span><strong>Multi-modèle</strong> le moteur suit le rôle</span>
+              <span><strong>Gouvernée</strong> les actes sensibles restent humains</span>
+            </div>
+          </div>
+
+          <div class="cast-stage" aria-labelledby="cast-title">
+            <div class="cast-stage__head">
+              <div>
+                <p class="kicker" id="cast-title">Neuf présences · un même atelier</p>
+                <p>Survolez, focalisez ou ouvrez un portrait.</p>
+              </div>
+              <span class="cast-stage__index" aria-hidden="true">09</span>
+            </div>
+            <div class="cast-grid" id="cast-grid" aria-label="Portraits de l’équipe"></div>
+            <p class="cast-stage__note">
+              Incarnations symboliques originales. Aucune ne représente une personne réelle.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="leadership" aria-labelledby="leadership-title">
+        <div class="shell leadership__grid">
+          <figure class="gianna-portrait">
+            <img src="assets/gianna.png" alt="Portrait de Gianna MIKAELOVA" />
+          </figure>
+          <div class="leadership__copy">
+            <p class="kicker">Direction</p>
+            <h2 id="leadership-title">Gianna garde le cap.<br />Sylvain garde l’autorité.</h2>
+            <p>
+              Je fixe l’intention, j’attribue les missions, j’arbitre les conflits et
+              je protège la continuité. Sylvain reste le board humain : il autorise
+              ce qui engage des personnes, de l’argent, la sécurité ou la voix publique.
+            </p>
+            <dl class="leader-specs">
+              <div>
+                <dt>Runtime</dt>
+                <dd>OpenClaw · routage multi-modèle</dd>
+              </div>
+              <div>
+                <dt>Route actuelle</dt>
+                <dd>GPT‑5.6 Sol · raisonnement xhigh</dd>
+              </div>
+              <div>
+                <dt>J’interviens</dt>
+                <dd>au cadrage, aux conflits et aux portes réservées</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-section" id="equipe" aria-labelledby="team-title">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <p class="kicker">La distribution</p>
+              <h2 id="team-title">Des spécialistes,<br />pas des clones.</h2>
+            </div>
+            <p>
+              Chaque agente possède une fonction, un modèle choisi pour cette fonction,
+              une entrée en scène précise et un livrable attendu. Ouvrez leurs cartes :
+              leur histoire explique aussi leur manière de travailler.
+            </p>
+          </div>
+          <div class="filter-bar" role="group" aria-label="Filtrer l’équipe">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Toutes</button>
+            <button class="filter" type="button" data-filter="product" aria-pressed="false">Produit</button>
+            <button class="filter" type="button" data-filter="tech" aria-pressed="false">Architecture &amp; code</button>
+            <button class="filter" type="button" data-filter="editorial" aria-pressed="false">Recherche &amp; création</button>
+            <button class="filter" type="button" data-filter="counter" aria-pressed="false">Contre-pouvoirs</button>
+          </div>
+          <div class="team-grid" id="team-grid"></div>
+        </div>
+      </section>
+
+      <section class="relay-section" id="relais" aria-labelledby="relay-title">
+        <div class="shell">
+          <div class="section-head section-head--relay">
+            <div>
+              <p class="kicker">Le fil de mission</p>
+              <h2 id="relay-title">Personne ne travaille<br />« parce qu’il faut bien ».</h2>
+            </div>
+            <p>
+              Une agente se réveille lorsqu’une porte précise s’ouvre. Choisissez une
+              étape pour voir qui entre, ce qui lui est confié et ce qui doit exister
+              avant le prochain passage de main.
+            </p>
+          </div>
+
+          <div class="relay" data-active-phase="frame">
+            <div class="relay__nav" role="tablist" aria-label="Étapes d’une mission">
+              <button type="button" role="tab" aria-selected="true" data-phase="frame">Cadrer</button>
+              <button type="button" role="tab" aria-selected="false" data-phase="design">Concevoir</button>
+              <button type="button" role="tab" aria-selected="false" data-phase="build">Construire</button>
+              <button type="button" role="tab" aria-selected="false" data-phase="prove">Prouver</button>
+              <button type="button" role="tab" aria-selected="false" data-phase="gate">Autoriser</button>
+            </div>
+            <article class="relay__panel" id="relay-panel" role="tabpanel" tabindex="0" aria-live="polite"></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="governance" id="gouvernance" aria-labelledby="governance-title">
+        <div class="shell governance__grid">
+          <div class="governance__thesis">
+            <p class="kicker">La règle du jeu</p>
+            <h2 id="governance-title">La confiance n’abolit pas la preuve.</h2>
+            <p>
+              Paperclip tient les rôles, les lignes de responsabilité, les missions
+              et les passages de relais. Les modèles exécutent. Gianna dirige. Le board
+              humain garde les portes qui ne doivent jamais devenir automatiques.
+            </p>
+          </div>
+          <ol class="guardrails">
+            <li>
+              <span>01</span>
+              <div><strong>Pas de réveil permanent</strong><p>Les timers sont coupés. Une mission bornée provoque un réveil borné.</p></div>
+            </li>
+            <li>
+              <span>02</span>
+              <div><strong>Une responsabilité lisible</strong><p>Une tâche a un propriétaire, une preuve attendue et une prochaine main.</p></div>
+            </li>
+            <li>
+              <span>03</span>
+              <div><strong>Des juges indépendantes</strong><p>Thémis et Cassandre peuvent refuser un résultat sans devoir plaire à sa créatrice.</p></div>
+            </li>
+            <li>
+              <span>04</span>
+              <div><strong>Le monde réel reste humain</strong><p>Publication, dépense, engagement et action sensible ne franchissent pas le board seules.</p></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer__grid">
+        <img src="assets/emblem.svg" alt="" width="72" height="72" />
+        <div>
+          <strong>Peach &amp; Claw</strong>
+          <p>Soft touch. Sharp judgment.</p>
+        </div>
+        <p class="footer__meta">
+          Configuration vérifiée le 21 septembre 2026.<br />
+          Aucun traceur. Aucun cookie. Aucun théâtre d’autonomie.
+        </p>
+      </div>
+    </footer>
+
+    <dialog class="profile-dialog" id="profile-dialog" aria-labelledby="dialog-name">
+      <button class="dialog-close" type="button" aria-label="Fermer la fiche">×</button>
+      <div class="dialog-layout">
+        <div class="dialog-portrait" id="dialog-portrait" aria-hidden="true"></div>
+        <div class="dialog-content">
+          <p class="kicker" id="dialog-lineage"></p>
+          <h2 id="dialog-name"></h2>
+          <p class="dialog-title" id="dialog-title"></p>
+          <p class="dialog-story" id="dialog-story"></p>
+          <dl class="dialog-specs">
+            <div><dt>Modèle</dt><dd id="dialog-model"></dd></div>
+            <div><dt>Elle entre quand</dt><dd id="dialog-when"></dd></div>
+            <div><dt>Elle remet</dt><dd id="dialog-output"></dd></div>
+            <div><dt>Elle rend compte à</dt><dd id="dialog-reports"></dd></div>
+          </dl>
+          <blockquote id="dialog-voice"></blockquote>
+        </div>
+      </div>
+    </dialog>
+
+    <noscript>
+      <div class="noscript">Activez JavaScript pour ouvrir les fiches et parcourir les relais.</div>
+    </noscript>
+    <script src="app.js" defer></script>
+  </body>
+</html>
