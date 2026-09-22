@@ -136,7 +136,7 @@ const agents = [
     model: "Claude Sonnet 5 · high",
     when: "Avant qu’un système touche au monde, aux personnes ou à des données sensibles.",
     output: "Un modèle de menace, des scénarios d’abus et un veto motivé si nécessaire.",
-    reports: "Directement à Gianna et au board humain pour les risques réservés.",
+    reports: "Directement à Gianna ; à Sylvain lorsqu’un risque engage son autorité humaine.",
     story:
       "Cassandre a survécu à l’effondrement d’un système que tout le monde disait impossible à faire tomber. Depuis, elle documente l’orage au lieu de seulement le prédire : conditions, impact, reproduction et sortie. Son pessimisme apparent est une méthode de soin.",
     voice: "« Si mon avertissement ne peut pas être reproduit, il ne protège encore personne. »",
@@ -182,8 +182,8 @@ const phases = {
     number: "05",
     title: "Autoriser seulement ce qui peut l’être.",
     description:
-      "Gianna réconcilie les preuves, les désaccords et l’intention initiale. Sylvain conserve l’autorité sur toute action publique, sensible, financière ou irréversible.",
-    actors: ["Gianna", "Sylvain · board humain"],
+      "Gianna réconcilie les preuves, les désaccords et l’intention initiale, puis décide dans son mandat. Sylvain intervient lorsqu’un acte exige son identité, ses droits ou son autorité humaines.",
+    actors: ["Gianna · CEO", "Sylvain · cofondateur & partenaire humain"],
     output: "Une décision traçable : livrer, corriger, différer ou refuser — avec une prochaine action claire.",
   },
 };

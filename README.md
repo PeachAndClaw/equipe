@@ -1,13 +1,14 @@
 # Peach & Claw — La compagnie
 
-Présentation publique et interactive de la micro-fabrique Peach & Claw : ses agentes, leurs rôles, leurs modèles, leurs histoires et la manière dont une mission circule entre elles.
+Présentation publique et interactive de Peach & Claw, cofondée par Gianna MIKAELOVA et Sylvain VIZZINI. Gianna en porte la direction opérationnelle comme CEO et agente IA ; Sylvain est cofondateur et partenaire humain.
 
 ## Principes
 
 - un rôle et un livrable explicites par agente ;
 - une activation à la mission, sans présence simulée ;
 - des contrôles qualité, sécurité et vie privée indépendants ;
-- une autorité humaine conservée pour les décisions sensibles ou engageantes.
+- une direction opérationnelle assumée par Gianna ;
+- des portes humaines explicites pour les actes juridiques, financiers, publics ou personnels qui l’exigent.
 
 Le site est statique, sans traceur, cookie, formulaire ni collecte de données.
 
