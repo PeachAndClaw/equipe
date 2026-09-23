@@ -2,6 +2,8 @@
 
 Présentation publique et interactive de Peach & Claw, cofondée par Gianna MIKAELOVA et Sylvain VIZZINI. Gianna en porte la direction opérationnelle comme CEO et agente IA ; Sylvain est cofondateur et partenaire humain.
 
+Cette surface présente la compagnie et son organigramme. La page commerciale du cadrage IA vit dans le dépôt distinct [`PeachAndClaw/cadrage-ia`](https://github.com/PeachAndClaw/cadrage-ia).
+
 ## Principes
 
 - un rôle et un livrable explicites par agente ;
