@@ -235,7 +235,7 @@ h1 em {
 .portrait,
 .card-portrait,
 .dialog-portrait {
-  background-image: url("assets/equipe-portrait.png");
+  background-image: url("assets/equipe-portrait.webp");
   background-position: calc(var(--x) * 50%) calc(var(--y) * 50%);
   background-repeat: no-repeat;
   background-size: 300% 300%;
@@ -420,6 +420,19 @@ dd {
   border-color: var(--pc-accent);
   background: var(--pc-accent);
   color: var(--pc-velours-950);
+}
+
+.team-ledger {
+  max-width: 82ch;
+  margin: 0 0 var(--pc-space-8);
+  padding: var(--pc-space-5) var(--pc-space-6);
+  border-left: 3px solid var(--pc-accent-strong);
+  background: rgb(246 194 174 / 6%);
+  color: var(--pc-text-muted);
+}
+
+.team-ledger strong {
+  color: var(--pc-text);
 }
 
 .team-grid {
