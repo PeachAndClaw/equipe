@@ -24,7 +24,9 @@ Puis ouvrir <http://127.0.0.1:4173>.
 
 ## Publication
 
-La branche `main` est publiée sur GitHub Pages par le workflow officiel `pages.yml`.
+URL canonique : <https://peachandclaw.com/compagnie/>.
+
+La branche `main` reste publiée sur GitHub Pages par le workflow officiel `pages.yml`.
 
 Les portraits sont des incarnations symboliques originales. Ils ne représentent aucune personne réelle.
 
