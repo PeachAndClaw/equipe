@@ -373,6 +373,229 @@ dd {
   margin: 0;
 }
 
+.revenue-front {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(5rem, 10vw, 9rem) 0;
+  border-bottom: 1px solid var(--pc-border);
+  background:
+    radial-gradient(circle at 12% 28%, rgb(82 103 78 / 17%), transparent 31rem),
+    radial-gradient(circle at 88% 70%, rgb(91 31 45 / 20%), transparent 33rem),
+    linear-gradient(180deg, #100d0e, var(--pc-bg));
+}
+
+.revenue-front::after {
+  content: "REVENUE";
+  position: absolute;
+  right: -0.05em;
+  bottom: -0.24em;
+  color: rgb(246 194 174 / 2.5%);
+  font: 700 clamp(7rem, 19vw, 19rem) / 0.75 var(--pc-font-utility);
+  letter-spacing: -0.08em;
+  pointer-events: none;
+}
+
+.revenue-front__head {
+  position: relative;
+  z-index: 1;
+}
+
+.revenue-pipeline {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(16rem, 0.72fr);
+  gap: var(--pc-grid-gap);
+  align-items: stretch;
+}
+
+.revenue-pipeline::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 2.3rem;
+  right: 2.2rem;
+  left: 2.2rem;
+  height: 1px;
+  background: linear-gradient(90deg, #907458, var(--pc-accent-strong), #6e4a44);
+  box-shadow: 0 0 1.5rem rgb(246 194 174 / 20%);
+}
+
+.revenue-agent,
+.revenue-gate {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--pc-border);
+  border-radius: var(--pc-radius-soft);
+  background: rgb(20 16 17 / 94%);
+  box-shadow: var(--pc-shadow-raised);
+}
+
+.revenue-agent {
+  --revenue-tone: #907458;
+}
+
+.revenue-agent--vera {
+  --revenue-tone: #6f3545;
+}
+
+.revenue-agent::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--revenue-tone);
+}
+
+.revenue-agent__portrait {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--pc-border);
+  background: var(--pc-surface-raised);
+}
+
+.revenue-agent__portrait::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 36%;
+  background: linear-gradient(transparent, rgb(12 9 10 / 82%));
+  pointer-events: none;
+}
+
+.revenue-agent__portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 28%;
+  filter: saturate(0.88) contrast(1.02);
+}
+
+.revenue-agent__portrait figcaption {
+  position: absolute;
+  z-index: 1;
+  right: var(--pc-space-4);
+  bottom: var(--pc-space-4);
+  display: flex;
+  gap: 0.55rem;
+  align-items: center;
+  color: var(--pc-text);
+  font: 700 var(--pc-step--1) / 1 var(--pc-font-utility);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.revenue-agent__portrait figcaption span {
+  display: grid;
+  width: 2.1rem;
+  height: 2.1rem;
+  place-items: center;
+  border: 1px solid rgb(246 194 174 / 48%);
+  border-radius: 50%;
+  color: var(--pc-accent-strong);
+}
+
+.revenue-agent__copy {
+  padding: var(--pc-space-6);
+}
+
+.revenue-agent__role {
+  margin: 0 0 0.45rem;
+  color: var(--pc-accent-strong);
+  font: 700 var(--pc-step--1) / 1.25 var(--pc-font-utility);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.revenue-agent h3,
+.revenue-gate h3 {
+  margin: 0 0 var(--pc-space-4);
+  font: 500 var(--pc-step-2) / 1 var(--pc-font-display);
+  letter-spacing: -0.025em;
+}
+
+.revenue-agent h3 strong,
+.revenue-gate h3 strong {
+  font-weight: 650;
+}
+
+.revenue-agent__copy > p:not(.revenue-agent__role),
+.revenue-gate > div > p:not(.revenue-agent__role, .revenue-gate__verdict) {
+  color: var(--pc-text-muted);
+}
+
+.revenue-agent__specs {
+  display: grid;
+  gap: var(--pc-space-3);
+  margin: var(--pc-space-6) 0 0;
+  padding-top: var(--pc-space-4);
+  border-top: 1px solid var(--pc-border);
+}
+
+.revenue-agent__specs > div {
+  display: grid;
+  grid-template-columns: 5.8rem 1fr;
+  gap: var(--pc-space-3);
+}
+
+.revenue-agent__specs dd {
+  color: var(--pc-text-muted);
+  font-size: var(--pc-step--1);
+}
+
+.revenue-gate {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: var(--pc-space-6);
+  background:
+    linear-gradient(145deg, rgb(246 194 174 / 11%), transparent 50%),
+    rgb(20 16 17 / 96%);
+}
+
+.revenue-gate__mark {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: clamp(3rem, 8vw, 8rem);
+}
+
+.revenue-gate__mark span {
+  display: grid;
+  width: 2.2rem;
+  height: 2.2rem;
+  place-items: center;
+  border: 1px solid var(--pc-accent-strong);
+  border-radius: 50%;
+  color: var(--pc-accent-strong);
+  font: 700 var(--pc-step--1) / 1 var(--pc-font-utility);
+}
+
+.revenue-gate__mark img {
+  width: 3.5rem;
+  height: auto;
+  opacity: 0.82;
+}
+
+.revenue-gate__verdict {
+  margin: var(--pc-space-6) 0 0;
+  padding-top: var(--pc-space-4);
+  border-top: 1px solid rgb(246 194 174 / 28%);
+  color: var(--pc-text);
+  font: 500 var(--pc-step-0) / 1.45 var(--pc-font-display);
+  font-style: italic;
+}
+
+.revenue-disclosure {
+  position: relative;
+  z-index: 1;
+  max-width: 72ch;
+  margin: var(--pc-space-5) 0 0;
+  color: var(--pc-text-muted);
+  font-size: 0.72rem;
+}
+
 .team-section,
 .relay-section,
 .governance {
@@ -847,6 +1070,21 @@ blockquote {
   .team-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .revenue-pipeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .revenue-gate {
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(8rem, 0.38fr) 1fr;
+    grid-template-rows: 1fr;
+    gap: var(--pc-space-8);
+  }
+
+  .revenue-gate__mark {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 720px) {
@@ -874,6 +1112,30 @@ blockquote {
 
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .revenue-pipeline {
+    grid-template-columns: 1fr;
+  }
+
+  .revenue-pipeline::before {
+    top: 2rem;
+    right: auto;
+    bottom: 2rem;
+    left: 1.05rem;
+    width: 1px;
+    height: auto;
+    background: linear-gradient(180deg, #907458, var(--pc-accent-strong), #6e4a44);
+  }
+
+  .revenue-gate {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    gap: var(--pc-space-5);
+  }
+
+  .revenue-gate__mark {
+    align-items: center;
   }
 
   .card-portrait {
