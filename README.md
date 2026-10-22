@@ -13,7 +13,10 @@ Cette surface présente la compagnie et ses deux lignes de travail : l’atelier
 - une direction opérationnelle assumée par Gianna ;
 - des portes humaines explicites pour les actes juridiques, financiers, publics ou personnels qui l’exigent.
 
-Le site est statique, sans traceur, cookie, formulaire ni collecte de données.
+Le site est statique : aucun traceur ni cookie n’est exécuté dans le navigateur,
+et aucun formulaire ne collecte de données. Les journaux techniques ordinaires
+de l’hébergeur peuvent alimenter des statistiques agrégées de fréquentation et
+de sécurité ; ils ne constituent pas un suivi publicitaire des visiteurs.
 
 ## Développement local
 
